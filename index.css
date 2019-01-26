@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box; 
+}
+
+h1{
+    text-align: center;  
+    font-size: 42px; 
+}
+.meal-details{
+    font-size: 30px; 
+    width: 400px;
+    margin-left: 300px;  
+}
+
+.input{
+    width: 60px; 
+}
