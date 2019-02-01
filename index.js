@@ -21,15 +21,15 @@ function renderMealDetails(){
   $('.meal-details-container').html(generateMealDetails); 
 }
 
-const mealPrice = function getMealPrice(){
+const mealPrice = function(){
   return $('#meal-price').val(); 
 };
 
-const taxRate = function getTaxRate(){
+const taxRate = function(){
   return $('#tax-rate').val(); 
 };
 
-const tip = function getTip(){
+const tip = function(){
   return $('#tip').val(); 
 }; 
 
