@@ -10,11 +10,31 @@
 </head>
 
 <body>
-    <h1>Waitstaff Calculator</h1>
+    <header role="banner">    
+        <h1>Waitstaff Calculator</h1>
+    </header>
+    <main>
         <section class="meal-details-container">
+            <fieldset class="meal-details">
+                <legend>Enter the Meal Details</legend>
+                <form for="entering meal details" id="js-meal-details-form">
+                
+                </form>
+            </fieldset>
+        </section>
+        <section id="js-customer-charges">
 
-        </section> 
+        </section>
+        <section id="js-my-earnings-info">
+
+        </section>
+        <div>
+            <button type="reset" name="reset" id="reset-button" >Reset</button>
+        </div>
+    </main>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="store.js"></script>
+    <script src="calculator.js"></script>
     <script src="index.js"></script>
 </body>
 
