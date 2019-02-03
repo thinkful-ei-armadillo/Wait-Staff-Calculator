@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box; 
+}
+
+.meal-details-container{
+    width: 20%;
+    position: relative; 
+    left: 25%
+}
+
+.customer-charges{
+    width: 20%;
+    position: absolute; 
+    left: 50%; 
+    top: 80px; 
+    
+}
+
+.my-earnings-info{
+    width: 20%;  
+}
+
+h1{
+    text-align: center; 
+}
+

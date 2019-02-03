@@ -12,6 +12,7 @@ const calculator = (function(){
         <label for="tip-percentage">Tip Percentage %</label>
         <input type="number" for="tip percentage" value="15" min="0" class="input" id="tip-percentage" required><br>
         <input type="submit" for="submit input" value="Submit" class="button" id="submit-input">
+        <button type="reset" name="clear" id="js-clear-form">Clear</button>
     `; 
   }
   function generateCustomerCharges(){
@@ -63,16 +64,27 @@ const calculator = (function(){
     });
   }
 
+  function handleClear(){
+    $('#js-meal-details-form').on('click', '#js-clear-form', function(){
+      render();  
+    }); 
+  }
+
   function handleReset(){
     $('#reset-button').on('click', function(){
-      console.log('reset button clicked'); 
+      store.reset();
+      render(); 
     });
   }
 
+  function bindEventListeners(){
+    handleSubmit(); 
+    handleClear(); 
+    handleReset();
+  }
   return{
-    handleReset,
-    handleSubmit,
     render,
+    bindEventListeners, 
   };
 }()); 
 

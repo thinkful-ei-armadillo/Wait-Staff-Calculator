@@ -14,18 +14,31 @@ const store = (function(){
     this.averageTip = Number((this.tipTotal/this.mealCount).toFixed(2));  
   }
 
+  function reset(){
+    this.baseMealPrice = 0; 
+    this.taxRate = 0; 
+    this.tipPercentage = 0; 
+    this.subTotal = 0; 
+    this.tip = 0;
+    this.total = 0; 
+    this.tipTotal = 0; 
+    this.mealCount = 0; 
+    this.averageTip = 0; 
+  }
+
   return{
-    baseMealPrice: null, 
-    taxRate: null,
-    tipPercentage:null,
-    subTotal: null,
-    tip: null, 
-    total: null,
-    tipTotal: null,
+    baseMealPrice: 0, 
+    taxRate: 0,
+    tipPercentage: 0,
+    subTotal: 0,
+    tip: 0, 
+    total: 0,
+    tipTotal: 0,
     mealCount: 0,
-    averageTip: null, 
+    averageTip: 0, 
 
     userInput,
-    calculations, 
+    calculations,
+    reset, 
   };   
 }()); 
